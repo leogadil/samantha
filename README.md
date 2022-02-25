@@ -59,7 +59,7 @@ currently, this project is only private and will not accept contributions but pl
 
 ```python
 # this email is very old that's why there's a vlog in it.
-$ print("leogadilvlog@gmail.com")
+$ print("leogadil04@gmail.com")
 ```
 or [Issues](https://github.com/leogadil/engine3/issues)
 
