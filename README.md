@@ -1,11 +1,7 @@
-# test 
-
-
 # Samantha Engine
 
 Engine 3 is the third iteration of the Samantha Engine. Third iteration because I'm still learning python and I've been applying what I've learned since then. Samantha engine is the core and the framework of what an assistant interface might look like. its design is modular so it's easy to add functionality to the framework.
 
-> You can check out my progress on [trello](https://trello.com/b/r9b2P8p1/samantha-engine).
 
 ## Installation
 
@@ -17,7 +13,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-```python
+<!-- ```python
 import imports # to add the framework folder to the sys.path | will come up with a better idea to do this better
 import personalassistant as pa #importing the framework
 
@@ -35,7 +31,7 @@ class Samantha(pa.engine): # here. <---------------
 
 if __name__ == '__main__':
     Samantha()
-```
+``` -->
 
 ## Configuration
 Don't forget to add the configuration file where? `framework/config.json`. This is the format.
@@ -61,9 +57,9 @@ currently, this project is only private and will not accept contributions but pl
 # this email is very old that's why there's a vlog in it.
 $ print("leogadil04@gmail.com")
 ```
-or [Issues](https://github.com/leogadil/engine3/issues)
+or [Issues](https://github.com/LeoooooGadil/samantha/issues)
 
 
 
 ## License
-[MIT](https://github.com/leogadil/engine3/blob/master/LICENSE)
+[MIT](https://github.com/LeoooooGadil/samantha/blob/master/LICENSE)
