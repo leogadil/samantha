@@ -10,10 +10,10 @@ this is built on Python 3.9+. didn't check if it runs on older version of Python
 ```bash
 pip install -r requirements.txt
 ```
-
+<!-- 
 ## Usage
 
-<!-- ```python
+```python
 import imports # to add the framework folder to the sys.path | will come up with a better idea to do this better
 import personalassistant as pa #importing the framework
 
