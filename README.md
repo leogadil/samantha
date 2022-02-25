@@ -34,7 +34,10 @@ if __name__ == '__main__':
 ``` -->
 
 ## Configuration
-Don't forget to add the configuration file where? `framework/config.json`. This is the format.
+
+to be configured
+
+<!-- Don't forget to add the configuration file where? `framework/config.json`. This is the format.
 
 > **THIS IS VERY IMPORTANT!!! FRAMEWORK WILL NEVER WORK IF CONFIG IS MISSING**
 
@@ -47,7 +50,7 @@ Don't forget to add the configuration file where? `framework/config.json`. This 
     }
 }
 ```
-> In the future this will be auto-generated but it still on its early stage.
+> In the future this will be auto-generated but it still on its early stage. -->
 
 ## Contributing
 currently, this project is only private and will not accept contributions but please do contact me if you have suggestions, I am open to suggestions.
