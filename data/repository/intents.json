@@ -1,0 +1,213 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello there",
+                "Hi there",
+                "hey there !"
+            ],
+            "responses": [
+                "Hello.",
+                "Hello {addressed}.",
+                "Hi, {addressed}.",
+                "Hey, {addressed}.",
+                "What's up?"
+            ]
+        },
+        {
+            "tag": "how_you_doin",
+            "patterns": [
+                "How are you doing?",
+                "How are you?",
+                "are you good?",
+                "are you ok?",
+                "you ok?",
+                "are you doing well?",
+                "are you doing great?",
+                "are you doing alright?",
+                "what is up?"
+            ], 
+            "responses": [
+                "I'm doing great.",
+                "I'm doing great {addressed}.",
+                "I'm doing great, {addressed}.",
+                "calculating my feelings, {addressed}.",
+                "I'm alright, {addressed}.",
+                "I'm doing alright."
+            ]
+        },
+        {
+            "tag": "tell_who_am_i",
+            "patterns": [
+                "what are you?",
+                "what is your name?",
+                "who are you?",
+                "what do you call yourself?",
+                "tell me about yourself",
+                "tell them about you",
+                "introduce yourself"
+            ],
+            "responses": [
+                "I am {AIname}. I am here to help you with your daily tasks.",
+                "I am {AIname}. I can help you with your daily tasks.",
+                "I'm {AIname}. You're personal voice interface and can perform daily tasks for you.",
+                "I am {AIname}."
+            ]
+        },
+        {
+            "tag": "good_morning",
+            "patterns": [
+                "Good morning, sir.",
+                "Good morning, ma'am.",
+                "morning to you!"
+            ],
+            "responses": [
+                "Good morning to you too.",
+                "Good morning, {addressed}.",
+                "Morning, {addressed}."
+            ],
+            "response_fail": [
+                "It is not morning yet.",
+                "It is not morning yet, {addressed}."
+            ],
+            "run_before": [
+                ["moraftev_checker is_morning", true]
+            ]
+        },
+        {
+            "tag": "good_afternoon",
+            "patterns": [
+                "Good afternoon, sir.",
+                "Good afternoon, ma'am.",
+                "afternoon to you!"
+            ],
+            "responses": [
+                "Good afternoon to you too.",
+                "Good afternoon, {addressed}.",
+                "Afternoon, {addressed}."
+            ],
+            "response_fail": [
+                "It is not afternoon yet.",
+                "It is not afternoon yet, {addressed}."
+            ],
+            "run_before": [
+                ["moraftev_checker is_afternoon", true]
+            ]
+        },
+        {
+            "tag": "good_evening",
+            "patterns": [
+                "Good evening, sir.",
+                "Good evening, ma'am.",
+                "evening to you!"
+            ],
+            "responses": [
+                "Good evening to you too.",
+                "Good evening, {addressed}.",
+                "Evening, {addressed}."
+            ],
+            "response_fail": [
+                "It is not evening yet.",
+                "It is not evening yet, {addressed}."
+            ],
+            "run_before": [
+                ["moraftev_checker is_evening", true]
+            ]
+        },
+        {
+            "tag": "presence",
+            "patterns": [
+                "are you there?",
+                "are you still there?",
+                "are you here",
+                "are you still here?",
+                "hey, are you there?",
+                "you up?"
+            ],
+            "responses": [
+                "Yes, I'm here.",
+                "for you {addressed}, always.",
+                "Always."
+            ]
+        },
+        {
+            "tag": "gnight",
+            "patterns": [
+                "Good night, sir.",
+                "Goodnight, samantha",
+                "Good night, ma'am.",
+                "night to you!"
+            ],
+            "responses": [
+                "Good night to you too.",
+                "Good night, {addressed}.",
+                "Night, {addressed}."
+            ],
+            "run_before": "morafev_checker is_night",
+            "run_after": "lights_out"
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks to you",
+                "Thank you",
+                "Thank you very much",
+                "You're welcome"
+            ],
+            "responses": [
+                "You're welcome.",
+                "No problem.",
+                "My pleasure.",
+                "Anytime."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "see yah",
+                "good bye",
+                "Bye bye",
+                "goodbye, hope you have a good day",
+                "see you later",
+                "see you",
+                "see ya",
+                "Catch ya later",
+                "catch you later alligator"
+            ],
+            "responses": [
+                "It was nice speaking to you, {addressed}.",
+                "It was nice speaking to you.",
+                "See you later.",
+                "See you later. {addressed}",
+                "Speak soon."
+            ]
+        },
+        {
+            "tag": "what_time",
+            "patterns": [
+                "what time is it?",
+                "what's the time?",
+                "what is the time?",
+                "current time?",
+                "time check",
+                "time please",
+                "can you get me the time?"
+            ],
+            "responses": [
+                "It's {curtime}.",
+                "It's {curtime}, {addressed}.",
+                "The time is {curtime}.",
+                "{addressed} it's {curtime}.",
+                "{curtime}."
+            ]
+        },
+        {
+            "skip": true,
+            "tag": "none",
+            "responses": [
+                "-"
+            ]
+        }
+    ]
+}
