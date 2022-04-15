@@ -1,0 +1,1 @@
+convolutional nerual network : https://www.analyticsvidhya.com/blog/2021/12/intent-classification-with-convolutional-neural-networks/
