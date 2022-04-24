@@ -1,14 +1,14 @@
 import datetime
 import os
-import sys
 import random
+import sys
 from string import punctuation
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), './data/repository')))
 
-import numpy as np
 import nltk
+import numpy as np
 from tensorflow.keras import models
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam

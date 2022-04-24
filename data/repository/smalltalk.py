@@ -4,21 +4,17 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 class SmallTalk(ComponentBase):
-    
-    tokenizer = AutoTokenizer.from_pretrained("r3dhummingbird/DialoGPT-medium-joshua")
-    model = AutoModelForCausalLM.from_pretrained("r3dhummingbird/DialoGPT-medium-joshua")
-
-    intro = ""
 
     __chat_history_ids = None
-    turn = 0 
-        
-    # pre_input = tokenizer.encode(intro + tokenizer.eos_token, return_tensors='pt')
-    # __chat_history_ids = model.generate(pre_input, max_length=1000, pad_token_id=tokenizer.eos_token_id)
+    turn = 0
+
+    def __init__(self):
+        self.tokenizer = AutoTokenizer.from_pretrained("r3dhummingbird/DialoGPT-medium-joshua")
+        self.model = AutoModelForCausalLM.from_pretrained("r3dhummingbird/DialoGPT-medium-joshua")
 
     @classmethod
     def ask(cls, question):
-        if cls.turn > 4:
+        if cls.turn > 3:
             cls.__chat_history_ids = None
             cls.turn = 0
 
